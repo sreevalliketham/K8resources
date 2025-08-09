@@ -24,7 +24,7 @@ spec:
   resources:
     requests:
       storage: 10Gi
-      ---
+---
 apiVersion: v1
 kind: Pod
 metadata:
@@ -34,7 +34,7 @@ metadata:
     project: roboshop
 spec:
   nodeSelector:
-    topology.kubernetes.io/zone: us-east-1c
+    topology.kubernetes.io/zone: us-east-1b
   containers:
   - name: nginx
     image: nginx
